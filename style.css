@@ -1,8 +1,8 @@
 /*variables*/
 
 :root {
-    --primary: #FFC636;
-    --secondary: #0A0B5B;
+    --secondary: #FFC636;
+    --primary: #0A0B5B;
 }
 
 /* reset */
@@ -24,6 +24,7 @@ a {
 body {
     background: var(--primary);
     overflow-x: hidden;
+    font-family: 'PlayfairDisplay', serif;
 }
 
 .button {
@@ -50,12 +51,31 @@ textarea {
     background: rgba(255, 255, 255, 0.05);
     padding: 8px 12px;
     border-radius: 20px;
-    border: 2px solid #62c8ee;
+    border: 2px solid #9893D8;
     color: white;
 
 }
 
 /* fonts */
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.woff2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #DDDBFF;
+    font-weight: normal;
+}
+
+p,
+li,
+a {
+    color: #9893D8;
+}
 
 /* mobile styles */
 
