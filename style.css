@@ -1,0 +1,71 @@
+/*variables*/
+
+:root {
+    --primary: #FFC636;
+    --secondary: #0A0B5B;
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* base Styles */
+
+body {
+    background: var(--primary);
+    overflow-x: hidden;
+}
+
+.button {
+    background: none;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0.0.0, 0.6);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    box-shadow: 1px 2px 3px rgba(0.0.0, 0.2);
+    cursor: pointer;
+}
+
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 2px solid #62c8ee;
+    color: white;
+
+}
+
+/* fonts */
+
+/* mobile styles */
+
+/* tablet styles */
+@media screen and (min-width: 620px) {}
+
+/* large tablet styles */
+@media screen and (min-width: 960px) {}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {}
+
+/* print styles */
