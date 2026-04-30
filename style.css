@@ -31,7 +31,7 @@ body {
     background: none;
     border: 2px solid var(--secondary);
     color: var(--secondary);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px 20px;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0.0.0, 0.6);
@@ -94,19 +94,72 @@ h4 {
     font-size: 1.1em;
 }
 
-img {
-    width: 100%;
-    max-width: 150px;
+.members>a>img {
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 100px;
     box-shadow: 1px 2px 3px rgba(0.0.0, 0.2);
 }
 
-.game-logo img {
-    max-width: 300px;
-    border-radius: 500px;
+.game-logo {
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 1px 2px 3px rgba(0.0.0, 0.2);
+}
+
+.social>li>a>img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 /* mobile styles */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav {
+    margin: 0 20px;
+}
+
+.site-nav h1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.site-nav ul {
+    display: none;
+}
+
+#welcome {
+    padding: 20px;
+}
+
+.welcome-text {
+    grid-column: 1/6;
+}
+
+.welcome-img {
+    grid-column: 6/9;
+}
+
+.welcome-img img {
+    width: 200%;
+}
+
+.welcome-text a {
+    margin: 20px 0;
+}
+
 
 /* tablet styles */
 @media screen and (min-width: 620px) {}
@@ -124,18 +177,6 @@ img {
     body {
         font-size: 20px;
     }
-}
-
-.members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.members a {
-    text-align: center;
-    /* background-color: grey; */
-    padding: 20px;
 }
 
 /* print styles */
