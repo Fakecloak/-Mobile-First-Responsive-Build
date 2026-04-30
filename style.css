@@ -24,7 +24,7 @@ a {
 body {
     background: var(--primary);
     overflow-x: hidden;
-    font-family: 'PlayfairDisplay', serif;
+    font-family: 'Rubik', 'PlayfairDisplay', serif;
 }
 
 .button {
@@ -61,6 +61,11 @@ textarea {
 @font-face {
     font-family: 'PlayfairDisplay';
     src: url(fonts/PlayfairDisplay-VariableFont_wght.woff2);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(fonts/Rubik-Regular.ttf);
 }
 
 h1,
@@ -123,6 +128,7 @@ h4 {
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
 }
 
 .site-nav {
@@ -160,6 +166,66 @@ h4 {
     margin: 20px 0;
 }
 
+#members {
+    background: url(assets/square_bg.png);
+    background-size: cover;
+    background-position: no-repeat;
+    padding: 30px 20px;
+}
+
+#members h2 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.members a {
+    grid-column: 1/9;
+    margin: 20px 0px;
+    display: flex;
+    /* padding: 10px 20px; */
+}
+
+.members a * {
+    margin: 0 20px;
+    max-width: 60%;
+    align-self: center;
+
+}
+
+.members h4 {
+    color: #9994f7;
+    text-align: center;
+}
+
+.members .name {
+    color: white;
+}
+
+#games {
+    padding: 30px 20px;
+    background: #07083E;
+}
+
+#games h2 {
+    text-align: center;
+}
+
+#games ul {
+    margin: 40px 0;
+}
+
+#games ul li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    grid-column: span 4;
+    text-align: center;
+}
+
+
+#games img {
+    margin: 10px auto;
+    /* height: 80px; */
+}
 
 /* tablet styles */
 @media screen and (min-width: 620px) {}
