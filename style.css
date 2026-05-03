@@ -179,26 +179,35 @@ h4 {
 }
 
 .members a {
-    grid-column: 1/9;
+    grid-column: 2/8;
     margin: 20px 0px;
     display: flex;
-    /* padding: 10px 20px; */
+    align-items: center;
+    gap: 30px;
 }
 
-.members a * {
+/* .members a * {
     margin: 0 20px;
     max-width: 60%;
     align-self: center;
 
+} */
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    flex: 1;
 }
 
-.members h4 {
-    color: #9994f7;
-    text-align: center;
-}
-
-.members .name {
+.member-card>.name {
     color: white;
+    font-size: 1.2em;
+}
+
+.member-card>h4 {
+    color: #9994f7;
 }
 
 #games {
