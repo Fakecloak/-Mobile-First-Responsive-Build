@@ -297,8 +297,8 @@ footer img {
     width: 20px;
 }
 
-/* tablet styles */
 
+/* tablet styles */
 
 @media screen and (min-width: 620px) {}
 
@@ -341,6 +341,7 @@ footer img {
 
 footer {
     background-size: 20%;
+    padding: 40px 20px;
 }
 
 /* large tablet styles */
@@ -374,6 +375,16 @@ footer {
     .welcome-text {
         align-self: center;
     }
+
+    #games {
+        padding: 30px 20px;
+    }
+
+    footer {
+        padding: 40px 20px;
+        background-size: 15%;
+    }
+
 }
 
 /* desktop styles */
@@ -382,6 +393,12 @@ footer {
     body {
         font-size: 20px;
     }
+
+    footer {
+        padding: 40px 20px;
+        background-size: 10%;
+    }
+
 }
 
 /* print styles */
