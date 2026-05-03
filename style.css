@@ -129,6 +129,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
+    box-sizing: border-box;
 }
 
 .site-nav {
@@ -199,6 +200,7 @@ h4 {
     justify-content: center;
     /* align-items: center; */
     flex: 1;
+    gap: 10px;
 }
 
 .member-card>.name {
@@ -220,18 +222,25 @@ h4 {
 }
 
 #games ul {
-    margin: 40px 0;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
 }
 
-#games ul li {
-    background: rgba(0, 0, 0, 0.2);
+
+#games li {
     padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
     grid-column: span 4;
     text-align: center;
+
 }
 
 #games img {
     margin: 10px auto;
+    height: 80px;
     /* height: 80px; */
 }
 
@@ -289,12 +298,81 @@ footer img {
 }
 
 /* tablet styles */
+
+
 @media screen and (min-width: 620px) {}
+
+.welcome-text {
+    grid-column: 1/5;
+}
+
+.welcome-img {
+    grid-column: 5/9;
+}
+
+.welcome-img img {
+    width: 100%;
+}
+
+.members {
+    margin-top: 40px;
+}
+
+.members a {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.members a img {
+    margin-bottom: 10px;
+}
+
+.member-card {
+    text-align: center;
+}
+
+#games {
+    padding: 30px 100px;
+}
+
+footer {
+    background-size: 20%;
+}
 
 /* large tablet styles */
 @media screen and (min-width: 960px) {
     body {
         font-size: 18px;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+    }
+
+    .site-nav {
+        padding: 0 20px;
+    }
+
+    .site-nav h1 {
+        grid-column: 1/3;
+    }
+
+    .site-nav ul {
+        display: flex;
+        grid-column: 6/9;
+        justify-content: flex-end;
+        align-self: center;
+        gap: 1.2em;
+    }
+
+    .welcome-text {
+        align-self: center;
     }
 }
 
